@@ -4,19 +4,22 @@
 ### 一. 训练数据的结构（参考data/bike）
 ```
 data/bike
-├── densepose
-├── depth_maps
-├── images 
-├── keypoints
-├── mono_depth
-├── segmentations
-├── smpl_pred
-└── sparse
+├── densepose       #detectron2做densepose_rcnn             ：*.png.npy
+├── depth_maps      #colmap得到的深度信息                     ：*.png.geometric.bin
+├── images          #colmap筛选的图片信息                     ：*.png
+├── keypoints       #mmpose的关键点检测                       ：*.png.npy
+├── mono_depth      #BoostingMonocularDepth的单目深度估计     ：*.png
+├── segmentations   #detectron2根据colmap筛选的图片做的分割    ：*.png
+├── smpl_pred       #ROMP人体编码                            ：*.png.npz
+├── sparse          #colmap得到的相机信息                     ：cameras.txt, images.txt, points3D.txt
+├── alignments.npy  
+├── smpl_output_optimized.pkl
+└── smpl_output_romp.pkl
 ```
 ### 二. 预处理依赖项目
- 1. [COLMAP](https://github.com/colmap/colmap.git) 用到[ceres-solver](https://github.com/ceres-solver/ceres-solver.git)  ：传统多视图三维重建管线。 似乎要求3.6版本。
+ 1. [COLMAP](https://github.com/colmap/colmap.git) 及其依赖[ceres-solver](https://github.com/ceres-solver/ceres-solver.git)  ：传统多视图三维重建管线。 似乎要求3.6版本。
  ![](.NeuMan_images/eba5bf8c.png)
- 2. [Detectron2](https://github.com/jiangwei221/detectron2.git) ：目标检测和分割。 
+ 2. [Detectron2](https://github.com/jiangwei221/detectron2.git) ：目标检测和分割，DensePose。
  ![](.NeuMan_images/1592e7f0.png)
  3. [mmpose](https://github.com/jiangwei221/mmpose.git) ：姿态估计。
  ![](.NeuMan_images/0ddeff1f.png)
@@ -52,45 +55,31 @@ git checkout 8b788f93200ce6485e885da0c736f114e4de8eaf
 cd ..
 ```
  
- 
  ### 二. 预处理流程 一共10步
  1. 用save_video_frames.py从视频获取帧。 输入到messi\raw_720p
- 2. 用detectron2做mask_rcnn图像分割后得到mask。输入messi\raw_masks
- 3. 用colmap做稀疏场景三维重建。最终输出到：
-    ```
-    messi/output/images
-    messi/output/depth_maps
-    messi/output/sparse
-    ```
+ 2. 用detectron2\demo做mask_rcnn图像分割后得到mask。输入messi\raw_masks
+ 3. 用colmap做稀疏场景三维重建。最终输出到：messi/output/images，depth_maps，sparse
     - feature_extractor: 根据图像和分割mask提取特征到messi\recon\db.db
     - exhaustive_matcher: 修改db.db文件
     - mapper：输入到messis\recon\sparse
-    ```
-    messi/recon/sparse/
-    └── 0
-        ├── cameras.bin
-        ├── images.bin
-        ├── points3D.bin
-        └── project.ini
-
-    ```
     - image_undistorter
     - patch_match_stereo
     - model_converter
-  4. 对messi/output/images/*.png做mask_rcnn分割到messi\output\segmentations
-  5. 用detectron2做densepose_rcnn到output\densepose
+  4. 用detectron2\demo对messi/output/images/*.png做mask_rcnn分割到messi\output\segmentations
+  5. 用detectron2\projects\DensePose(建立像素和3D对象几何之间的密集对应关系)做densepose_rcnn到output\densepose\output.pkl
      ```
+     注释了一行
      # assert int(os.path.basename(pred['file_name'])[:-4]) == i
      ```
-     DensePose 旨在学习和建立可变形对象（例如人类或动物）的图像像素和 3D 对象几何之间的密集对应关系。
   6. 用mmpose做关键点检测，到messi/output/keypoints
+     ```
      pip install mmcv==1.3.8
      python -m pip install -e mmpose
+     ```
   7. 用BoostingMonocularDepth做单目深度估计，到messi/output/mono_depth
-  8. 用ROMP做SMPL,输出到\messi\output\smpl_pred
-     > SMPL是一种统计模型，使用两种类型的参数对人体受试者进行编码
+  8. 用ROMP做SMPL(人体参数编码模型),输出到\messi\output\smpl_pred。
   9. 用export_alignment.py对smpl对齐  
-  10. 用silhouette优化SMPL
+  10. 用optimize_smpl.py做SMPL的silhouette优化
   
  
  
