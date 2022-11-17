@@ -1,0 +1,28 @@
+# nerf-pytorch项目学习
+
+### 一. 把训练和推理跑起来
+
+
+###  二. 读源码之参数篇
+
+###  三. 代码流程图(train步骤)
+- parse_args()：解析参数
+- load_llff_data：加载数据，支持四种类型：llff/blender/LINEMOD/dv
+- 数据类型转换
+- 创建log目录，拷贝配置文件
+- **create_nerf：创建nerf模型**
+- 拷贝数据到GPU
+- 进入默认20k的迭代训练循环：
+    - 准备一个batch的图片输入
+    - **优化循环：render**
+        - batchify_rays
+            - render_rays
+                - run模型：network_query_fn + raw2outputs
+    - 计算loss：img_loss = img2mse
+    - 反向传播：loss.backward()
+    - 调整学习率
+    - 次数i_weights到了保存模型：torch.save
+    - 次数i_video到了生成视频：**render_path** + imageio.mimwrite
+    - 次数i_testset到了做测试：render_path
+    - 次数i_print到了：打印日志
+###  四. 分析 
