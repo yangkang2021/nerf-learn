@@ -30,6 +30,8 @@ https://mp.weixin.qq.com/s/cv6g-5i9C5ej2CQtI0tEGw
 https://mrtornado24.github.io/FENeRF/
 https://mp.weixin.qq.com/s/G6b9M3PrMjhwRWLJw6GmpQ
 
+#### KeypointNeRF：基于图像的体积化身的泛化
+
 #### StyleNeRF
 
 #### PixelNeRF
