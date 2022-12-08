@@ -3,15 +3,22 @@
 >本人的科研方向是三维重建与对抗生成，Nerf让人惊叹
 
 ### 一. 基本原理
-1. [直接读代码nerf-pytorch](nerf-pytorch/README.md)
-2. [看nerf的视频教程](https://www.bilibili.com/video/BV1d841187tn)
-3. [读nerf的论文](https://www.matthewtancik.com/nerf)
+1. [颠覆传统三维重建之nerf(一)---概述](1.颠覆传统三维重建之nerf(一)---概述.md)
+1. [颠覆传统三维重建之nerf(二)---原理](2.颠覆传统三维重建之nerf(二)---原理.md)
+1. [颠覆传统三维重建之nerf(三)---公式推导](3.颠覆传统三维重建之nerf(三)---公式推导.md)
+1. [颠覆传统三维重建之nerf(四)---pytorch-nerf项目介绍](4.颠覆传统三维重建之nerf(四)---pytorch-nerf项目介绍.md)
+1. [颠覆传统三维重建之nerf(五)---复习相机几何与相机参数](5.颠覆传统三维重建之nerf(五)---复习相机几何与相机参数.md)
+1. [颠覆传统三维重建之nerf(六)---pytorch-nerf数据格式与数据加载](6.颠覆传统三维重建之nerf(六)---pytorch-nerf数据格式与数据加载.md)
 
-### 二. 各种应用场景及其模型
+### 二. 各种改进算法
+1. [instant-ngp](https://github.com/NVlabs/instant-ngp)
+2. [nerf_pl](https://github.com/kwea123/nerf_pl)
+
+### 三. 各种应用场景及其模型
 
 #### NeuMan
-1. [NeuMan](NeuMan.md)：基于Nerf的从单个视频实现人体三维重建。
-2. [NeuMan-预处理](NeuMan-预处理.md)
+1. [NeuMan](NeuMan/NeuMan.md)：基于Nerf的从单个视频实现人体三维重建。
+2. [NeuMan-预处理](NeuMan/NeuMan-预处理.md)
 
 #### AD-NeRF 
 由音频和人脸图像合成人脸视频并表现出自然的说话风格
@@ -44,6 +51,14 @@ https://mp.weixin.qq.com/s/DDt6rVGk4inBFkDnlgBpQA
 #### AdaNeRF：自适应采样用于神经辐射场实时渲染
 https://mp.weixin.qq.com/s/XJTrg-iAOC8PQLjsnmL1oQ
 
+#### MoFaNeRF: 可变形面部神经辐射场
+https://mp.weixin.qq.com/s/Wmx6l3IDOBV8PH1taka71w
+
+#### 在 StyleGAN 中注入可控三维感知 NeRF-GAN 用于可编辑人像合成
+https://mp.weixin.qq.com/s/QcLsHTKEEgB53Z0oi7kaPA
+
 ### [更多](https://github.com/yenchenlin/awesome-NeRF)
+
+### 四. 各种参考资料/课程/视频
 
 
