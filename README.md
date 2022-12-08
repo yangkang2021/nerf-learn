@@ -9,6 +9,7 @@
 1. [颠覆传统三维重建之nerf(四)---pytorch-nerf项目介绍](4.颠覆传统三维重建之nerf(四)---pytorch-nerf项目介绍.md)
 1. [颠覆传统三维重建之nerf(五)---复习相机几何与相机参数](5.颠覆传统三维重建之nerf(五)---复习相机几何与相机参数.md)
 1. [颠覆传统三维重建之nerf(六)---pytorch-nerf数据格式与数据加载](6.颠覆传统三维重建之nerf(六)---pytorch-nerf数据格式与数据加载.md)
+7. [颠覆传统三维重建之nerf(七)---pytorch-nerf模型创建1之位置编码](7.颠覆传统三维重建之nerf(七)---pytorch-nerf模型创建1之位置编码.md)
 
 ### 二. 各种改进算法
 1. [instant-ngp](https://github.com/NVlabs/instant-ngp)
