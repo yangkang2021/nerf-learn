@@ -4,12 +4,20 @@
 
 ### 一. 基本原理
 1. [颠覆传统三维重建之nerf(一)---概述](1.颠覆传统三维重建之nerf(一)---概述.md)
-1. [颠覆传统三维重建之nerf(二)---原理](2.颠覆传统三维重建之nerf(二)---原理.md)
-1. [颠覆传统三维重建之nerf(三)---公式推导](3.颠覆传统三维重建之nerf(三)---公式推导.md)
-1. [颠覆传统三维重建之nerf(四)---pytorch-nerf项目介绍](4.颠覆传统三维重建之nerf(四)---pytorch-nerf项目介绍.md)
-1. [颠覆传统三维重建之nerf(五)---复习相机几何与相机参数](5.颠覆传统三维重建之nerf(五)---复习相机几何与相机参数.md)
-1. [颠覆传统三维重建之nerf(六)---pytorch-nerf数据格式与数据加载](6.颠覆传统三维重建之nerf(六)---pytorch-nerf数据格式与数据加载.md)
-7. [颠覆传统三维重建之nerf(七)---pytorch-nerf模型创建1之位置编码](7.颠覆传统三维重建之nerf(七)---pytorch-nerf模型创建1之位置编码.md)
+2. [颠覆传统三维重建之nerf(二)---原理](2.颠覆传统三维重建之nerf(二)---原理.md)
+3. [颠覆传统三维重建之nerf(三)---公式推导](3.颠覆传统三维重建之nerf(三)---公式推导.md)
+4. [颠覆传统三维重建之nerf(四)---pytorch-nerf项目介绍](4.颠覆传统三维重建之nerf(四)---pytorch-nerf项目介绍.md)
+5. [颠覆传统三维重建之nerf(五)---复习相机几何与相机参数](5.颠覆传统三维重建之nerf(五)---复习相机几何与相机参数.md)
+6. [颠覆传统三维重建之nerf(六)---pytorch-nerf数据格式与数据加载](6.颠覆传统三维重建之nerf(六)---pytorch-nerf数据格式与数据加载.md)
+7. [颠覆传统三维重建之nerf(七)---pytorch-nerf模型创建1之概述](7.颠覆传统三维重建之nerf(七)---pytorch-nerf模型创建1之概述.md)
+8. [颠覆传统三维重建之nerf(八)---pytorch-nerf模型创建2之位置编码](8.颠覆传统三维重建之nerf(八)---pytorch-nerf模型创建2之位置编码.md)
+9. [颠覆传统三维重建之nerf(九)---pytorch-nerf模型创建3之创建NeRF](9.颠覆传统三维重建之nerf(九)---pytorch-nerf模型创建3之创建NeRF.md)
+10.[颠覆传统三维重建之nerf(十)---pytorch-nerf模型训练1之概述](10.颠覆传统三维重建之nerf(十)---pytorch-nerf模型训练1之概述.md)
+11.[颠覆传统三维重建之nerf(十一)---pytorch-nerf模型训练2之计算光线](11.颠覆传统三维重建之nerf(十一)---pytorch-nerf模型训练2之计算光线.md)
+12.[颠覆传统三维重建之nerf(十二)---pytorch-nerf模型训练3之渲染(光线成像)](12.颠覆传统三维重建之nerf(十二)---pytorch-nerf模型训练3之渲染(光线成像).md)
+13.[颠覆传统三维重建之nerf(十三)---pytorch-nerf模型训练4之损失函数](13.颠覆传统三维重建之nerf(十三)---pytorch-nerf模型训练4之损失函数.md)
+14.[颠覆传统三维重建之nerf(十四)---pytorch-nerf模型测试与推理](14.颠覆传统三维重建之nerf(十四)---pytorch-nerf模型测试与推理.md)
+15.[颠覆传统三维重建之nerf(十五)---pytorch-nerf总结](15.颠覆传统三维重建之nerf(十五)---pytorch-nerf总结.md)
 
 ### 二. 各种改进算法
 1. [instant-ngp](https://github.com/NVlabs/instant-ngp)
