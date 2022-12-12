@@ -19,11 +19,13 @@
 14. [颠覆传统三维重建之nerf(十四)---pytorch-nerf模型测试与推理](14.颠覆传统三维重建之nerf(十四)---pytorch-nerf模型测试与推理.md)
 15. [颠覆传统三维重建之nerf(十五)---pytorch-nerf总结](15.颠覆传统三维重建之nerf(十五)---pytorch-nerf总结.md)
 
-### 二. 各种改进算法
-1. [instant-ngp](https://github.com/NVlabs/instant-ngp)
-2. [nerf_pl](https://github.com/kwea123/nerf_pl)
+### 二. 读[instant-ngp](https://github.com/NVlabs/instant-ngp) 源码系列
+1. [下载编译运行ngp](instant-ngp/1.下载编译运行ngp.md)
 
-### 三. 各种应用场景及其模型
+### 三. 读[ngp_pl](https://github.com/kwea123/ngp_pl) 源码系列
+
+### 四. 各种应用场景及其模型
+
 
 #### NeuMan
 1. [NeuMan](NeuMan/NeuMan.md)：基于Nerf的从单个视频实现人体三维重建。
