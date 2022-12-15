@@ -28,62 +28,78 @@
 
 ### 四. nerf模型提升的变种
 1. mip-NeRF
-2. **instant-ngp**
-3. Block-NeRF
-4. Plenoctree
-5. Plenoxels
-6. **Neus**
-7. KeypointNeRF：基于图像的体积化身的泛化
-8. point-NeRF：训练更快
-2. 压缩模型：https://mp.weixin.qq.com/s/hltAHEEVd4_ZTeLXxF1-ow
+1. instant-ngp
+1. Block-NeRF
+1. Plenoctree
+1. Plenoxels
+1. Neus
+1. KeypointNeRF
+1. point-NeRF
+    - 训练更快
+1. PixelNeRF
+1. IBRNet
+1. 压缩模型
+    - https://mp.weixin.qq.com/s/hltAHEEVd4_ZTeLXxF1-ow
+1. AdaNeRF
+    - 自适应采样用于神经辐射场实时渲染
+    - https://mp.weixin.qq.com/s/XJTrg-iAOC8PQLjsnmL1oQ
+1. NeRF++
 
-### 五. 各种应用场景及其模型
+### 五. 各种应用场景
 1. NeuMan
-    - [NeuMan](NeuMan/NeuMan.md)：基于Nerf的从单个视频实现人体三维重建。
+    - 基于Nerf的从单个视频实现人体三维重建。
+    - https://github.com/apple/ml-neuman
     - [NeuMan-预处理](NeuMan/NeuMan-预处理.md)
-2. AD-NeRF 
+1. ELICIT
+    - 单张图片生成数字人
+    - https://elicit3d.github.io/
+    - https://mp.weixin.qq.com/s/76-klqy_kiExjAyh2CVQvA
+1. 4D-Facial-Avatars
+    - **头部位姿和面部表情重建**
+    - https://github.com/gafniguy/4D-Facial-Avatars
+    - https://blog.51cto.com/u_15717531/5477328
+1. AD-NeRF 
     - 由音频和人脸图像合成人脸视频并表现出自然的说话风格
     - https://yudongguo.github.io/ADNeRF/
     - https://github.com/YudongGuo/AD-NeRF
-3. 4D-Facial-Avatars：
-    - https://github.com/gafniguy/4D-Facial-Avatars
-4. NeRFFaceEditing：
+1. CLIP-NeRF 
+    - 文字-图像驱动的NeRF操作
+    - https://mp.weixin.qq.com/s/DDt6rVGk4inBFkDnlgBpQA
+1. NeRFFaceEditing
+    - 使用NeRF进行人脸编辑
     - http://geometrylearning.com/NeRFFaceEditing/
     - https://mp.weixin.qq.com/s/cv6g-5i9C5ej2CQtI0tEGw
-5. FENeRF
-    - 使用 NeRF 进行人脸编辑
+1. FENeRF
+    - 使用NeRF进行人脸编辑
     - https://mrtornado24.github.io/FENeRF/
     - https://mp.weixin.qq.com/s/G6b9M3PrMjhwRWLJw6GmpQ
-6. SMPL-CLIP-NeRF
-    - 单张图片生成数字人
-    - https://mp.weixin.qq.com/s/76-klqy_kiExjAyh2CVQvA
-7. CLIP-NeRF 
-    - 文字-图像驱动的 NeRF 操作
-    - https://mp.weixin.qq.com/s/DDt6rVGk4inBFkDnlgBpQA
-8. AdaNeRF
-    - 自适应采样用于神经辐射场实时渲染
-    - https://mp.weixin.qq.com/s/XJTrg-iAOC8PQLjsnmL1oQ
-9. MoFaNeRF
-    - 可变形面部神经辐射场
+1. MoFaNeRF
+    - 可变形面部
     - https://mp.weixin.qq.com/s/Wmx6l3IDOBV8PH1taka71w
-10. NeRF-GAN
+1. SURF-GAN
     - 在StyleGAN中注入可控三维感知，NeRF-GAN用于可编辑人像合成
     - https://mp.weixin.qq.com/s/QcLsHTKEEgB53Z0oi7kaPA
-11. ENeRF：首次实现任意动态场景的实时照片级渲染
+1. ENeRF
+    - 动态场景
     - https://mp.weixin.qq.com/s/xuZ6x-ff4WHmGc-vW5j6dw
-12. MoFaNeRF: 可变形面部神经辐射场
-    - https://mp.weixin.qq.com/s/Wmx6l3IDOBV8PH1taka71w
-13. NeRF-SLAM: 具有神经辐射场的实时密集单目SLAM
-    - https://mp.weixin.qq.com/s/7ez-Jh9BQMQFtxd6x5OP4Q
-14. DiffRF: 
+1. StyleNeRF
+    - 结合了NeRF和StyleGAN
+    - https://github.com/facebookresearch/StyleNeRF
+1. StylizedNeRF
+    - NeRF的风格化
+    - http://intelligentgraphics.net/StylizedNeRF/
+1. HumanNeRF
+    - https://grail.cs.washington.edu/projects/humannerf/
+    - https://github.com/chungyiweng/humannerf
+1. DiffRF: 
     - Rendering-guided 3D Radiance Field Diffusion
     - https://sirwyver.github.io/DiffRF/
-12. StyleNeRF
-13. PixelNeRF
-14. IBRNet
-15. [查看更多1](https://github.com/yenchenlin/awesome-NeRF)
-16. [查看更多2](https://www.bilibili.com/video/BV1GM41167Vo)
-17. [查看更多3](https://www.bilibili.com/video/BV1fL4y1T7Ag)
+1. NeRF-SLAM
+    - 具有神经辐射场的实时密集单目SLAM
+    - https://mp.weixin.qq.com/s/7ez-Jh9BQMQFtxd6x5OP4Q
+1. [查看更多1](https://github.com/yenchenlin/awesome-NeRF)
+1. [查看更多2](https://www.bilibili.com/video/BV1GM41167Vo)
+1. [查看更多3](https://www.bilibili.com/video/BV1fL4y1T7Ag)
 ### 六. 各种参考资料/课程/视频
 
 
