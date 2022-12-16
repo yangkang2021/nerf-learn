@@ -50,54 +50,82 @@
 ### 五. 各种应用场景
 1. NeuMan
     - 基于Nerf的从单个视频实现人体三维重建。
+    - 总结：根据已知人体动作使得重建人物运动，不再是简单的360转动场景，人物跳舞了。
     - https://github.com/apple/ml-neuman
     - [NeuMan-预处理](NeuMan/NeuMan-预处理.md)
+    ![](.images/778ccd02.png)
 1. ELICIT
     - 单张图片生成数字人
+    - 总结：连视频或者图像集合都不需要，直接从单张图像重建。
     - https://elicit3d.github.io/
     - https://mp.weixin.qq.com/s/76-klqy_kiExjAyh2CVQvA
+    ![](.images/cb4b8b0f.png)
 1. 4D-Facial-Avatars
-    - **头部位姿和面部表情重建**
+    - 头部位姿和面部表情重建
+    - 总结：直接可以重建动态表情，不是静态模型。
     - https://github.com/gafniguy/4D-Facial-Avatars
     - https://blog.51cto.com/u_15717531/5477328
+    ![](.images/842d39d7.png)
 1. AD-NeRF 
-    - 由音频和人脸图像合成人脸视频并表现出自然的说话风格
+    - 由音频驱动的nerf，实现Talking Head。
+    - 总结：音频驱动，三维重建人物可以说话了。
     - https://yudongguo.github.io/ADNeRF/
     - https://github.com/YudongGuo/AD-NeRF
+    ![](.images/e9caaa66.png)
 1. CLIP-NeRF 
     - 文字-图像驱动的NeRF操作
+    - 总结：用文字或者图像就能驱动图像变成三维模型
+    - https://cassiepython.github.io/clipnerf/
     - https://mp.weixin.qq.com/s/DDt6rVGk4inBFkDnlgBpQA
+    ![](.images/f0e207d8.png)
 1. NeRFFaceEditing
     - 使用NeRF进行人脸编辑
     - http://geometrylearning.com/NeRFFaceEditing/
     - https://mp.weixin.qq.com/s/cv6g-5i9C5ej2CQtI0tEGw
+    ![](.images/998113a1.png)
 1. FENeRF
     - 使用NeRF进行人脸编辑
     - https://mrtornado24.github.io/FENeRF/
     - https://mp.weixin.qq.com/s/G6b9M3PrMjhwRWLJw6GmpQ
+    ![](.images/ae405af7.png)
 1. MoFaNeRF
-    - 可变形面部
+    - 变脸
+    - http://github.com/zhuhao-nju/mofanerf
     - https://mp.weixin.qq.com/s/Wmx6l3IDOBV8PH1taka71w
+    ![](.images/ae064938.png)
 1. SURF-GAN
     - 在StyleGAN中注入可控三维感知，NeRF-GAN用于可编辑人像合成
+    - https://github.com/jgkwak95/SURF-GAN
     - https://mp.weixin.qq.com/s/QcLsHTKEEgB53Z0oi7kaPA
+    ![](.images/e10b0212.png)
 1. ENeRF
-    - 动态场景
+    - 真正的动态场景
+    - https://zju3dv.github.io/enerf/
+    - https://github.com/zju3dv/ENeRF
     - https://mp.weixin.qq.com/s/xuZ6x-ff4WHmGc-vW5j6dw
+    ![](.images/b366e4a6.png)
 1. StyleNeRF
     - 结合了NeRF和StyleGAN
     - https://github.com/facebookresearch/StyleNeRF
+    ![](.images/4ee6e614.png)
 1. StylizedNeRF
     - NeRF的风格化
     - http://intelligentgraphics.net/StylizedNeRF/
+    ![](.images/012845d7.png)
 1. HumanNeRF
+    - 专注人体三维重建
     - https://grail.cs.washington.edu/projects/humannerf/
     - https://github.com/chungyiweng/humannerf
+    
+    ![](.images/1b77fdf5.png)
 1. DiffRF: 
+    - 跟扩散模型的结合
     - Rendering-guided 3D Radiance Field Diffusion
     - https://sirwyver.github.io/DiffRF/
+    ![](.images/9f1be14b.png)
 1. NeRF-SLAM
     - 具有神经辐射场的实时密集单目SLAM
+    - https://arxiv.org/pdf/2210.13641.pdf
     - https://mp.weixin.qq.com/s/7ez-Jh9BQMQFtxd6x5OP4Q
 1. [查看更多1](https://github.com/yenchenlin/awesome-NeRF)
 1. [查看更多2](https://www.bilibili.com/video/BV1GM41167Vo)
