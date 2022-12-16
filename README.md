@@ -25,6 +25,7 @@
 
 ### 三. 读[instant-ngp](https://github.com/NVlabs/instant-ngp) 源码系列
 1. [下载编译运行ngp](instant-ngp/1.下载编译运行ngp.md)
+2. [读HashNeRF-pytorch项目---理解gnp的hash编码原理](instant-ngp/2.读HashNeRF-pytorch项目---理解gnp的hash编码原理.md)
 
 ### 四. nerf模型提升的变种
 1. mip-NeRF
