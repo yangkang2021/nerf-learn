@@ -127,9 +127,18 @@
     - 具有神经辐射场的实时密集单目SLAM
     - https://arxiv.org/pdf/2210.13641.pdf
     - https://mp.weixin.qq.com/s/7ez-Jh9BQMQFtxd6x5OP4Q
+1. NeRF-Art
+    - 如何把一个正常人变成僵尸风格？用NeRF-Art就可以做到！
+    - 论文：https://arxiv.org/abs/2212.08070
+    - 代码：https://github.com/cassiePython/NeRF-Art
+    - https://mp.weixin.qq.com/s/UlAQLMzAvWNKHi4c6u7ckA
+1. 非刚体NeRF
+    - https://graphics.tu-bs.de/publications/kappel2022fast
+    - https://mp.weixin.qq.com/s/FCmY1Z3ChYEHf-j5P5yKEQ (Nerf集合)
 1. [查看更多1](https://github.com/yenchenlin/awesome-NeRF)
 1. [查看更多2](https://www.bilibili.com/video/BV1GM41167Vo)
 1. [查看更多3](https://www.bilibili.com/video/BV1fL4y1T7Ag)
+1. [Nerf集合](https://mp.weixin.qq.com/s/FCmY1Z3ChYEHf-j5P5yKEQ)
 ### 六. 各种参考资料/课程/视频
 
 
