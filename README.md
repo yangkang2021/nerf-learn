@@ -28,7 +28,14 @@
 2. [读HashNeRF-pytorch项目---理解gnp的hash编码原理](instant-ngp/2.读HashNeRF-pytorch项目---理解gnp的hash编码原理.md)
 3. [读ngp官方cuda代码](instant-ngp/3.读ngp官方cuda代码.md)
 
-### 四. nerf模型提升的变种
+### 四. 读[NeuMan](https://github.com/apple/ml-neuman)
+1. [neuman简介](neuman/1-neuman简介.md)
+1. [neuman环境搭建](neuman/2-neuman环境搭建.md)
+1. [neuman数据准备](neuman/3-neuman数据准备.md)
+1. [neuman运行demo](neuman/4-neuman运行和训练bike.md)
+1. [neuman的数据预处理](neuman/5-neuman自定义数据集之预处理.md)
+
+### 五. nerf模型提升的变种
 1. mip-NeRF
 1. instant-ngp
 1. Block-NeRF
@@ -47,12 +54,11 @@
     - https://mp.weixin.qq.com/s/XJTrg-iAOC8PQLjsnmL1oQ
 1. NeRF++
 
-### 五. 各种应用场景
+### 六. 各种应用场景
 1. NeuMan
     - 基于Nerf的从单个视频实现人体三维重建。
     - 总结：根据已知人体动作使得重建人物运动，不再是简单的360转动场景，人物跳舞了。
     - https://github.com/apple/ml-neuman
-    - [NeuMan-预处理](NeuMan/NeuMan-预处理.md)
     ![](.images/778ccd02.png)
 1. ELICIT
     - 单张图片生成数字人
