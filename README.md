@@ -141,6 +141,11 @@
 1. 非刚体NeRF
     - https://graphics.tu-bs.de/publications/kappel2022fast
     - https://mp.weixin.qq.com/s/FCmY1Z3ChYEHf-j5P5yKEQ (Nerf集合)
+1. ClimateNeRF
+    - 它可以渲染出真实的天气效果，包括雾霾、雪和洪水
+    - https://arxiv.org/pdf/2211.13226.pdf
+    - https://mp.weixin.qq.com/s/6KVUMSk-gLpBtNd9kqjeZw
+    ![](.images/1403b104.png) 
 1. [查看更多1](https://github.com/yenchenlin/awesome-NeRF)
 1. [查看更多2](https://www.bilibili.com/video/BV1GM41167Vo)
 1. [查看更多3](https://www.bilibili.com/video/BV1fL4y1T7Ag)
