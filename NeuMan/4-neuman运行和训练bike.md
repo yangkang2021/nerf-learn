@@ -39,3 +39,38 @@ python train.py --scene_dir ./data/bike/ --name=bike_background_yangkang --train
 
 训练自行车场景的人
 python train.py --scene_dir ./data/bike  --name=bike_human_yangkang --load_background=bike_background_yangkang --train_mode=smpl_and_offset --use_cuda true
+
+### 三. 训练参数
+```
+optional arguments:
+  -h, --help            show this help message and exit
+  --train_mode {bkg,smpl_only,smpl_and_offset}
+
+General:
+  --use_cuda USE_CUDA   cuda
+
+NeRF:
+  --nerf_depth NERF_DEPTH
+                        network depth
+  --nerf_width NERF_WIDTH
+                        network width
+  --use_viewdirs USE_VIEWDIRS
+                        use directions as network input
+  --specular_can SPECULAR_CAN
+                        no specular in canonical space
+
+Positional Encoding:
+  --raw_pos_dim RAW_POS_DIM
+                        dimension of postion(XYZ, or XY)
+  --pos_min_freq POS_MIN_FREQ
+  --pos_max_freq POS_MAX_FREQ
+  --pos_N_freqs POS_N_FREQS
+  --raw_dir_dim RAW_DIR_DIM
+                        dimension of direction
+  --dir_max_freq DIR_MAX_FREQ
+  --dir_N_freqs DIR_N_FREQS
+  --log_sampling LOG_SAMPLING
+  --include_input INCLUDE_INPUT
+  --can_posenc CAN_POSENC
+                        rotate positional encoding for can space
+```
