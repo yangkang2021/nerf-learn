@@ -36,6 +36,7 @@
 1. [neuman的数据预处理](neuman/5-neuman自定义数据集之预处理.md)
 1. [neuman的train.py代码框架](neuman/6-neuman的train.py代码框架.md)
 1. [neuman训练数据加载](neuman/7-neuman训练数据加载.md)
+1. [neuman背景训练](neuman/8-neuman背景训练.md)
 
 ### 五. nerf模型提升的变种
 1. mip-NeRF
@@ -57,11 +58,21 @@
 1. NeRF++
 
 ### 六. 各种应用场景
+1. NGP
+    - hash编码的nerf，几秒钟就完成训练。
+    - https://github.com/NVlabs/instant-ngp
+    ![](.images/c14d90d8.png)
 1. NeuMan
     - 基于Nerf的从单个视频实现人体三维重建。
     - 总结：根据已知人体动作使得重建人物运动，不再是简单的360转动场景，人物跳舞了。
     - https://github.com/apple/ml-neuman
     ![](.images/778ccd02.png)
+1. InstantAvatar
+    - 从 60 秒单目视频中学习数字人化身
+    - 项目主页：https://tijiang13.github.io/InstantAvatar/
+    - 论文：https://arxiv.org/pdf/2212.10550.pdf
+    - 介绍：https://mp.weixin.qq.com/s/4Ad72-s--jL0AWkkGE7gAw
+    - ![](.images/e2c36b0b.png)
 1. ELICIT
     - 单张图片生成数字人
     - 总结：连视频或者图像集合都不需要，直接从单张图像重建。
