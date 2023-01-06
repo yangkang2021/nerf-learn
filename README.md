@@ -34,6 +34,8 @@
 1. [neuman数据准备](neuman/3-neuman数据准备.md)
 1. [neuman运行demo](neuman/4-neuman运行和训练bike.md)
 1. [neuman的数据预处理](neuman/5-neuman自定义数据集之预处理.md)
+1. [neuman的train.py代码框架](neuman/6-neuman的train.py代码框架.md)
+1. [neuman训练数据加载](neuman/7-neuman训练数据加载.md)
 
 ### 五. nerf模型提升的变种
 1. mip-NeRF
