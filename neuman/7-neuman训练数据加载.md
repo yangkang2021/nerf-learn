@@ -21,9 +21,10 @@
                 - scene_module.ImageFileScene
             -
         - update_near_far
-        - read_smpls
+        - read_smpls //读取了四个文件的信息
             - body_model = SMPL('data/smplx/smpl/SMPL_NEUTRAL.pkl',...)
             - joblib.load('smpl_output_romp.pkl')
+            - np.load(os.path.join(scene_dir, 'alignments.npy')
             - extract_smpl_at_frame
             - da_smpl
             - T_t2pose
@@ -46,6 +47,7 @@ Scene结果存储：
         - BaseScene
             - captures //NeuManCapture
             - point_cloud //还有点云数据
+        - smpls，verts，static_vert，Ts，uvs，faces //SMPL模型数据
 
 PinholeCapture的定义：image_path, cam, camera_pose
 - RigPinholeCapture
