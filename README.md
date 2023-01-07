@@ -37,6 +37,11 @@
 1. [neuman的train.py代码框架](neuman/6-neuman的train.py代码框架.md)
 1. [neuman训练数据加载](neuman/7-neuman训练数据加载.md)
 1. [neuman背景训练](neuman/8-neuman背景训练.md)
+1. [neuman人体训练](neuman/9-neuman人体训练.md)
+1. [neuman推理之渲染360度人体动作](neuman/10-neuman推理之渲染360度人体动作.md)
+1. [neuman推理之渲染测试视角](neuman/11-neuman推理之渲染测试视角.md)
+1. [neuman推理之渲染新的指定动作](neuman/12-neuman推理之渲染新的指定动作.md)
+1. [neuman推理之多人合并一起渲染](neuman/13-neuman推理之多人合并一起渲染.md)
 
 ### 五. nerf模型提升的变种
 1. mip-NeRF

@@ -68,6 +68,3 @@ CapturedContent的定义
 - ResizedCapturedDepth
 ---
 SMPL模型定义
-
-### 四. 参考
--[【PyTorch】torch.utils.data.Dataset 介绍与实战](https://blog.csdn.net/weixin_44211968/article/details/123744513)
