@@ -3,6 +3,8 @@
 
 >争取搞清楚每一个数学公式和每一行代码
 
+学习交流群
+![](.images/15dafa76.png)
 ### 一. 基本原理
 01. [颠覆传统三维重建方法之nerf(一)---概述](nerf/01.颠覆传统三维重建方法之nerf(一)---概述.md)
 02. [颠覆传统三维重建方法之nerf(二)---工作流程与基本原理](nerf/02.颠覆传统三维重建方法之nerf(二)---工作流程与基本原理.md)
@@ -168,6 +170,19 @@
 1. [查看更多2](https://www.bilibili.com/video/BV1GM41167Vo)
 1. [查看更多3](https://www.bilibili.com/video/BV1fL4y1T7Ag)
 1. [Nerf集合](https://mp.weixin.qq.com/s/FCmY1Z3ChYEHf-j5P5yKEQ)
-### 六. 各种参考资料/课程/视频
 
+### 六. 一些nerf项目
+1. SMPL-NeRF：https://github.com/HannesStark/SMPL-NeRF
+1. humannerf：https://github.com/chungyiweng/humannerf
+1. block-nerf：https://waymo.com/intl/zh-cn/research/block-nerf
+1. nerf-from-image: https://github.com/google-research/nerf-from-image
+
+### 七. nerf工具箱
+1. nerfstudio：https://github.com/nerfstudio-project/nerfstudio
+2. multinerf：https://github.com/google-research/multinerf
+3. xrnerf：https://github.com/openxrlab/xrnerf
+
+### 七. 各种参考资料/课程/视频
+1. https://www.bilibili.com/video/BV1xW4y1g79Q
+2. https://www.bilibili.com/video/BV1RM411B7pm
 

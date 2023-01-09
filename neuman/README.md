@@ -23,10 +23,11 @@
     - model.named_parameters():keepvars?
     - model.state_dict()
 - tqdm的用法
-- 导出模型
+- Pytorch导出模型
     ```
         #导出模型看看
         torch.onnx.export(model, (torch.randn(1, 90)), "./nerf-model.onnx", verbose=True,training=torch.onnx.TrainingMode.EVAL);
         torch.onnx.export(model_fine, (torch.randn(1, 90)), "./nerf-model-fine.onnx", verbose=True, training=torch.onnx.TrainingMode.EVAL);
         print("+++++++torch.onnx.export finished+++++++")
     ```
+- python中enumerate的用法
