@@ -82,7 +82,7 @@
     - 论文地址：https://arxiv.org/pdf/2112.05637.pdf
     - 项目主页: https://crishy1995.github.io/HeadNeRF-Project/
     - 代码链接: https://github.com/CrisHY1995/headnerf
-    - https://hy1995.top/HeadNeRF-Project/
+    - 介绍：https://m.thepaper.cn/baijiahao_18092004
     ![](.images/044a68b3.png)
 1. InstantAvatar
     - 从 60 秒单目视频中学习数字人化身
