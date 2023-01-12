@@ -76,6 +76,14 @@
     - 总结：根据已知人体动作使得重建人物运动，不再是简单的360转动场景，人物跳舞了。
     - https://github.com/apple/ml-neuman
     ![](.images/778ccd02.png)
+1. HeadNeRF
+    - 一个实时的基于nerf的参数化的人类头部模型
+    - A Real-time NeRF-based Parametric Head Model
+    - 论文地址：https://arxiv.org/pdf/2112.05637.pdf
+    - 项目主页: https://crishy1995.github.io/HeadNeRF-Project/
+    - 代码链接: https://github.com/CrisHY1995/headnerf
+    - https://hy1995.top/HeadNeRF-Project/
+    ![](.images/044a68b3.png)
 1. InstantAvatar
     - 从 60 秒单目视频中学习数字人化身
     - 项目主页：https://tijiang13.github.io/InstantAvatar/
