@@ -17,6 +17,7 @@
 1. nerf采用三维右手坐标系，跟OpenGL一样
     ![](.images/nerf的坐标系.png)
 
+    ![](.images/8d7daed7.png)
 2. nerf相关的三维坐标系
     - 常见的相机坐标系定义习惯右手坐标系，比如在OpenCV/COLMAP的相机坐标系是右手坐标系
     - LLFF/NeRF的相机坐标系是左手坐标系
