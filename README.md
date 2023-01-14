@@ -14,7 +14,7 @@
 04. [颠覆传统三维重建方法之nerf(四)---NeRF最核心公式推导-光线成像模型](nerf/04.颠覆传统三维重建方法之nerf(四)---公式推导-光线成像模型.md)
 00. [Nerf的三维坐标系](nerf/Nerf的三维坐标系.md)
 00. [小孔成像与相机模型](nerf/小孔成像与相机模型.md)
-00. [小孔成像的逆过程-不完整](nerf/小孔成像的逆过程.md)
+00. [小孔成像的逆过程](nerf/小孔成像的逆过程.md)--没有完成，而且有错误
 05. [颠覆传统三维重建方法之nerf(五)---相机小孔成像模型的逆变换](nerf/05.颠覆传统三维重建方法之nerf(五)---相机小孔成像模型的逆变换.md)
 
 
@@ -58,7 +58,7 @@
 1. instant-ngp
 1. Block-NeRF
 1. Plenoctree
-1. Plenoxels
+1. Plenoxels：即使没有神经网络，从头训练一个辐射场（radiance field）也能达到 NeRF 的生成质量，而且优化速度提升了两个数量级。
 1. Neus
 1. KeypointNeRF
 1. point-NeRF
