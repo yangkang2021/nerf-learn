@@ -189,7 +189,6 @@
 
 ### 六. 一些nerf项目
 1. SMPL-NeRF：https://github.com/HannesStark/SMPL-NeRF
-1. humannerf：https://github.com/chungyiweng/humannerf
 1. block-nerf：https://waymo.com/intl/zh-cn/research/block-nerf
 1. nerf-from-image: https://github.com/google-research/nerf-from-image
 
@@ -201,4 +200,11 @@
 ### 七. 各种参考资料/课程/视频
 1. https://www.bilibili.com/video/BV1xW4y1g79Q
 2. https://www.bilibili.com/video/BV1RM411B7pm
+
+### 八. 商业应用案例
+1. NeRF APP
+    - 基于NeRF的APP上架苹果商店！照片转3D只需一部手机
+    - 这个名叫Luma AI的“NeRF APP”，正式上架App Store后爆火。
+    - 苹果appstore下载：https://apps.apple.com/cn/app/luma-ai/id1615849914
+    - ![](.images/6f130daa.png)
 
