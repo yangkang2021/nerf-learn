@@ -197,11 +197,11 @@
 2. multinerf：https://github.com/google-research/multinerf
 3. xrnerf：https://github.com/openxrlab/xrnerf
 
-### 七. 各种参考资料/课程/视频
+### 八. 各种参考资料/课程/视频
 1. https://www.bilibili.com/video/BV1xW4y1g79Q
 2. https://www.bilibili.com/video/BV1RM411B7pm
 
-### 八. 商业应用案例
+### 九. 商业应用案例
 1. NeRF APP
     - 基于NeRF的APP上架苹果商店！照片转3D只需一部手机
     - 这个名叫Luma AI的“NeRF APP”，正式上架App Store后爆火。
