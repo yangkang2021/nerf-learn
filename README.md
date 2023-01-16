@@ -17,10 +17,7 @@
 00. [小孔成像的逆过程](nerf/小孔成像的逆过程.md)--没有完成，而且有错误
 05. [颠覆传统三维重建方法之nerf(五)---相机小孔成像模型的逆变换](nerf/05.颠覆传统三维重建方法之nerf(五)---相机小孔成像模型的逆变换.md)
 
-
-**注意：后面的都没有完全整理好**
-
-### 二. 读pytorch-nerf项目
+### 二. 读pytorch-nerf项目(**注意：后面的都没有完全整理好**)
 06. [颠覆传统三维重建方法之nerf(六)---pytorch-nerf项目介绍](nerf-pytorch/06.颠覆传统三维重建方法之nerf(六)---pytorch-nerf项目介绍.md)
 07. [颠覆传统三维重建方法之nerf(七)---pytorch-nerf数据格式与数据加载](nerf-pytorch/07.颠覆传统三维重建方法之nerf(七)---pytorch-nerf数据格式与数据加载.md)
 08. [颠覆传统三维重建方法之nerf(八)---pytorch-nerf模型创建1之概述](nerf-pytorch/08.颠覆传统三维重建方法之nerf(八)---pytorch-nerf模型创建1之概述.md)
@@ -34,11 +31,14 @@
 16. [颠覆传统三维重建方法之nerf(十六)---pytorch-nerf总结](nerf-pytorch/16.颠覆传统三维重建方法之nerf(十六)---pytorch-nerf总结.md)
 
 ### 三. 读[instant-ngp](https://github.com/NVlabs/instant-ngp) 源码系列
+1. [ngp的各个实现版本列表](instant-ngp/0.ngp的各个实现版本列表.md)
 1. [下载编译运行ngp](instant-ngp/1.下载编译运行ngp.md)
 2. [读HashNeRF-pytorch项目---理解gnp的hash编码原理](instant-ngp/2.读HashNeRF-pytorch项目---理解gnp的hash编码原理.md)
 3. [读ngp官方cuda代码](instant-ngp/3.读ngp官方cuda代码.md)
+4. [用colormap和Record3D准备ngp需要的数据集](instant-ngp/4.用colormap和Record3D准备ngp需要的数据集.md)
+5. [ngp的模型结构与模型导入导出](instant-ngp/5.ngp的模型结构与模型导入导出.md)
 
-### 四. 读[NeuMan](https://github.com/apple/ml-neuman)
+### 四. 读[NeuMan](https://github.com/apple/ml-neuman) (**注意：后面的都没有完全整理好**)
 1. [neuman简介](neuman/1-neuman简介.md)
 1. [neuman环境搭建](neuman/2-neuman环境搭建.md)
 1. [neuman数据准备](neuman/3-neuman数据准备.md)
@@ -60,6 +60,7 @@
 1. Plenoctree
 1. Plenoxels：即使没有神经网络，从头训练一个辐射场（radiance field）也能达到 NeRF 的生成质量，而且优化速度提升了两个数量级。
 1. Neus
+1. TensoRF-张量辐射场
 1. KeypointNeRF
 1. point-NeRF
     - 训练更快
@@ -207,4 +208,17 @@
     - 这个名叫Luma AI的“NeRF APP”，正式上架App Store后爆火。
     - 苹果appstore下载：https://apps.apple.com/cn/app/luma-ai/id1615849914
     - ![](.images/6f130daa.png)
+### 十. 关于性能指标
+在默认设置情况，V100上训练乐高数据：Speed十每秒的迭代次数。
+| Model | Split | PSNR(峰值信噪比) | Train Speed | Test Speed |
+| - | - | - | - | - |
+| instant-ngp (paper)            | trainval?            | 36.39        |  -   | -    |
+| TensoRF (paper)                | train (30K steps)    | 36.46        |  -   | -    |
+| Instant-ngp (JNeRF)            | -                    | 36.41(5min)  |  -   | -    |
 
+
+### 十一. 规划的学习
+- [x] Nerf基本原理  
+- [x] 读pytorch-nerf项  
+- [x] 读instant-ngp  
+- [x] 读NeuMan
