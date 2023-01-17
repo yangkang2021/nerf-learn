@@ -208,17 +208,25 @@
     - 这个名叫Luma AI的“NeRF APP”，正式上架App Store后爆火。
     - 苹果appstore下载：https://apps.apple.com/cn/app/luma-ai/id1615849914
     - ![](.images/6f130daa.png)
-### 十. 关于性能指标
+    
+### 十. 关于虚拟数字人，数字克隆人
+0. NeuMan：https://github.com/apple/ml-neuman
+1. SMPL-NeRF：https://github.com/HannesStark/SMPL-NeRF
+2. HumanNeRF：https://github.com/chungyiweng/humannerf
+3. Audio2Face/Audio2Gesture
+4. 视觉动作捕捉
+5. 语音识别、NLP语音对话、推荐系统、TTS语音合成
+6. 人体模型SMPL/+H/-X、SMPLify/+H/-X
+7. HybrIK：https://jeffli.site/HybrIK/ 
+8. Photo Wake-Up: 
+    - 照片大变活人(3D Character Animation from a Single Photo)
+    - https://grail.cs.washington.edu/projects/wakeup/
+    - ![](.images/3fa05f49.png)
+
+### 十一. 关于性能指标
 在默认设置情况，V100上训练乐高数据：Speed十每秒的迭代次数。
 | Model | Split | PSNR(峰值信噪比) | Train Speed | Test Speed |
 | - | - | - | - | - |
 | instant-ngp (paper)            | trainval?            | 36.39        |  -   | -    |
 | TensoRF (paper)                | train (30K steps)    | 36.46        |  -   | -    |
 | Instant-ngp (JNeRF)            | -                    | 36.41(5min)  |  -   | -    |
-
-
-### 十一. 规划的学习
-- [x] Nerf基本原理  
-- [x] 读pytorch-nerf项  
-- [x] 读instant-ngp  
-- [x] 读NeuMan
