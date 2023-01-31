@@ -233,3 +233,6 @@
 | instant-ngp (paper)            | trainval?            | 36.39        |  -   | -    |
 | TensoRF (paper)                | train (30K steps)    | 36.46        |  -   | -    |
 | Instant-ngp (JNeRF)            | -                    | 36.41(5min)  |  -   | -    |
+
+### 十二. 问答
+1. [记录网友的一些问题](q-a.md)
