@@ -56,9 +56,12 @@ cd ..
 ```
  
  ### 二. 默认的预处理方法
+ 1. 创建docker容器，准备预处理的环境、代码。
+ 2. 在docker里面运行gen_run.py生成run.sh，然后运行run.sh
  ```
 python gen_run.py --video /data/my_video.mov 生成run.sh，然后运行run.sh。
 ```
+3. 可视化检查数据
  
  ### 三. run.sh的预处理流程 一共10步
  1. 用save_video_frames.py从视频获取帧。 输入到messi\raw_720p

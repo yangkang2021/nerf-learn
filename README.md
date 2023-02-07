@@ -60,6 +60,9 @@
 1. Plenoctree
 1. Plenoxels：即使没有神经网络，从头训练一个辐射场（radiance field）也能达到 NeRF 的生成质量，而且优化速度提升了两个数量级。
 1. Neus
+1. RobustNeRF
+    - 项目地址：https://robustnerf.github.io/public/
+    - 文章地址：https://arxiv.org/pdf/2302.00833.pdf
 1. TensoRF-张量辐射场
 1. KeypointNeRF
 1. point-NeRF
