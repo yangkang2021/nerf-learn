@@ -91,6 +91,12 @@
     - https://zju3dv.github.io/instant_nvr/
     - 个人总结：对NeuMan的速度提升
     ![](.images/05bddb37.png)
+1. Structured Local Radiance Fields for Human Avatar Modeling
+    - 基于NeRF自动构建可驱动的实时全身数字人
+    - https://arxiv.org/pdf/2203.14478.pdf
+    - 个人总结：解决NeuMan的问题和效果提升
+    - 视频讲解：https://apposcmf8kb5033.pc.xiaoe-tech.com/detail/l_63e4f0bae4b06159f7389b4a/4
+    ![](.images/0dff7585.png)
 1. HeadNeRF
     - 一个实时的基于nerf的参数化的人类头部模型
     - A Real-time NeRF-based Parametric Head Model
