@@ -86,6 +86,11 @@
     - 总结：根据已知人体动作使得重建人物运动，不再是简单的360转动场景，人物跳舞了。
     - https://github.com/apple/ml-neuman
     ![](.images/778ccd02.png)
+1. Learning Neural Volumetric Representations of Dynamic Humans in Minutes
+    - 在几分钟内学习动态人体的神经体积表示
+    - https://zju3dv.github.io/instant_nvr/
+    - 个人总结：对NeuMan的速度提升
+    ![](.images/05bddb37.png)
 1. HeadNeRF
     - 一个实时的基于nerf的参数化的人类头部模型
     - A Real-time NeRF-based Parametric Head Model
@@ -216,6 +221,7 @@
 1. [SMPL人体模型](digital-human/1-SMPL人体模型.md)
 
 ---
+0. 郑泽荣的论文集合：https://zhengzerong.github.io/
 0. NeuMan：https://github.com/apple/ml-neuman
 1. SMPL-NeRF：https://github.com/HannesStark/SMPL-NeRF
 2. HumanNeRF：https://github.com/chungyiweng/humannerf
