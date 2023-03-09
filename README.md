@@ -1,23 +1,22 @@
 # Nerf(神经辐射场)学习笔记
->本人的科研方向是三维重建与对抗生成，Nerf让人惊叹
->
->争取搞清楚每一个数学公式和每一行代码
-    
-### 学习交流微信群
+>本人的科研方向是三维重建与对抗生成，Nerf让人惊叹，争取搞清楚每一个数学公式和每一行代码
+
 ![](.images/15dafa76.png)
 
-### 一. 基本原理
+### 一. nerf的数学基础
+00. [Nerf的右手三维坐标系与OpenGL相同](nerf/Nerf的右手三维坐标系与OpenGL相同.md)
+00. [二维和三维的几何变换](nerf/二维和三维的几何变换.md)
+00. [小孔成像与相机模型](nerf/小孔成像与相机模型.md)
+00. [小孔成像的逆过程](nerf/小孔成像的逆过程.md)--没有完成，而且有错误
+
+### 二. nerf的基本原理
 01. [颠覆传统三维重建方法之nerf(一)---概述](nerf/01.颠覆传统三维重建方法之nerf(一)---概述.md)
 02. [颠覆传统三维重建方法之nerf(二)---工作流程与基本原理](nerf/02.颠覆传统三维重建方法之nerf(二)---工作流程与基本原理.md)
 03. [颠覆传统三维重建方法之nerf(三)---光线的数学表示与光线采样](nerf/03.颠覆传统三维重建方法之nerf(三)---光线的数学表示与光线采样.md)
 04. [颠覆传统三维重建方法之nerf(四)---NeRF最核心公式推导-光线成像模型](nerf/04.颠覆传统三维重建方法之nerf(四)---公式推导-光线成像模型.md)
-00. [Nerf的右手三维坐标系与OpenGL相同](nerf/Nerf的右手三维坐标系与OpenGL相同.md)
-00. [小孔成像与相机模型](nerf/小孔成像与相机模型.md)
-00. [小孔成像的逆过程](nerf/小孔成像的逆过程.md)--没有完成，而且有错误
 05. [颠覆传统三维重建方法之nerf(五)---相机小孔成像模型的逆变换](nerf/05.颠覆传统三维重建方法之nerf(五)---相机小孔成像模型的逆变换.md)
-00. [二维和三维的几何变换](nerf/二维和三维的几何变换.md)
 
-### 二. 读pytorch-nerf项目(**注意：后面的都没有完全整理好**)
+### 三. 读pytorch-nerf项目(**注意：后面的都没有完全整理好**)
 06. [颠覆传统三维重建方法之nerf(六)---pytorch-nerf项目介绍](nerf-pytorch/06.颠覆传统三维重建方法之nerf(六)---pytorch-nerf项目介绍.md)
 07. [颠覆传统三维重建方法之nerf(七)---pytorch-nerf数据格式与数据加载](nerf-pytorch/07.颠覆传统三维重建方法之nerf(七)---pytorch-nerf数据格式与数据加载.md)
 08. [颠覆传统三维重建方法之nerf(八)---pytorch-nerf模型创建1之概述](nerf-pytorch/08.颠覆传统三维重建方法之nerf(八)---pytorch-nerf模型创建1之概述.md)
@@ -30,7 +29,7 @@
 15. [颠覆传统三维重建方法之nerf(十五)---pytorch-nerf模型测试与推理](nerf-pytorch/15.颠覆传统三维重建方法之nerf(十五)---pytorch-nerf模型测试与推理.md)
 16. [颠覆传统三维重建方法之nerf(十六)---pytorch-nerf总结](nerf-pytorch/16.颠覆传统三维重建方法之nerf(十六)---pytorch-nerf总结.md)
 
-### 三. 读[instant-ngp](https://github.com/NVlabs/instant-ngp) 源码系列
+### 四. 读[instant-ngp](https://github.com/NVlabs/instant-ngp) 源码系列
 1. [ngp的各个实现版本列表](instant-ngp/0.ngp的各个实现版本列表.md)
 1. [下载编译运行ngp](instant-ngp/1.下载编译运行ngp.md)
 2. [读HashNeRF-pytorch项目---理解gnp的hash编码原理](instant-ngp/2.读HashNeRF-pytorch项目---理解gnp的hash编码原理.md)
@@ -38,7 +37,7 @@
 4. [用colormap和Record3D准备ngp需要的数据集](instant-ngp/4.用colormap和Record3D准备ngp需要的数据集.md)
 5. [ngp的模型结构与模型导入导出](instant-ngp/5.ngp的模型结构与模型导入导出.md)
 
-### 四. 读[NeuMan](https://github.com/apple/ml-neuman) (**注意：后面的都没有完全整理好**)
+### 五. 读[NeuMan](https://github.com/apple/ml-neuman) (**注意：后面的都没有完全整理好**)
 1. [neuman简介](neuman/1-neuman简介.md)
 1. [neuman环境搭建](neuman/2-neuman环境搭建.md)
 1. [neuman数据准备](neuman/3-neuman数据准备.md)
@@ -53,7 +52,9 @@
 1. [neuman推理之渲染新的指定动作](neuman/12-neuman推理之渲染新的指定动作.md)
 1. [neuman推理之多人合并一起渲染](neuman/13-neuman推理之多人合并一起渲染.md)
 
-### 五. nerf模型提升的变种
+---
+
+### 六. nerf模型提升的变种
 1. mip-NeRF
 1. instant-ngp
 1. Block-NeRF
@@ -75,8 +76,11 @@
     - 自适应采样用于神经辐射场实时渲染
     - https://mp.weixin.qq.com/s/XJTrg-iAOC8PQLjsnmL1oQ
 1. NeRF++
-
-### 六. 各种应用场景
+1. DVGO
+    - https://github.com/sunset1995/DirectVoxGO
+    - https://blog.csdn.net/weixin_50973728/article/details/126922818
+    
+### 七. 各种应用场景
 1. NGP
     - hash编码的nerf，几秒钟就完成训练。
     - https://github.com/NVlabs/instant-ngp
@@ -202,31 +206,29 @@
 1. [查看更多3](https://www.bilibili.com/video/BV1fL4y1T7Ag)
 1. [Nerf集合](https://mp.weixin.qq.com/s/FCmY1Z3ChYEHf-j5P5yKEQ)
 
-### 六. 一些nerf项目
+### 八. 一些nerf项目
 1. SMPL-NeRF：https://github.com/HannesStark/SMPL-NeRF
 1. block-nerf：https://waymo.com/intl/zh-cn/research/block-nerf
 1. nerf-from-image: https://github.com/google-research/nerf-from-image
 
-### 七. nerf工具箱
+### 九. nerf工具箱
 1. nerfstudio：https://github.com/nerfstudio-project/nerfstudio
 2. multinerf：https://github.com/google-research/multinerf
 3. xrnerf：https://github.com/openxrlab/xrnerf
 
-### 八. 各种参考资料/课程/视频
+### 十. 各种参考资料/课程/视频
 1. https://www.bilibili.com/video/BV1xW4y1g79Q
 2. https://www.bilibili.com/video/BV1RM411B7pm
 
-### 九. 商业应用案例
+### 十一. 商业应用案例
 1. NeRF APP
     - 基于NeRF的APP上架苹果商店！照片转3D只需一部手机
     - 这个名叫Luma AI的“NeRF APP”，正式上架App Store后爆火。
     - 苹果appstore下载：https://apps.apple.com/cn/app/luma-ai/id1615849914
     - ![](.images/6f130daa.png)
     
-### 十. 关于虚拟数字人，数字克隆人
+### 十二. 关于虚拟数字人，数字克隆人
 1. [SMPL人体模型](digital-human/1-SMPL人体模型.md)
-
----
 0. 郑泽荣的论文集合：https://zhengzerong.github.io/
 0. NeuMan：https://github.com/apple/ml-neuman
 1. SMPL-NeRF：https://github.com/HannesStark/SMPL-NeRF
@@ -241,7 +243,7 @@
     - https://grail.cs.washington.edu/projects/wakeup/
     - ![](.images/3fa05f49.png)
 
-### 十一. 关于性能指标
+### 十三. 关于性能指标
 在默认设置情况，V100上训练乐高数据：Speed十每秒的迭代次数。
 | Model | Split | PSNR(峰值信噪比) | Train Speed | Test Speed |
 | - | - | - | - | - |
@@ -249,5 +251,5 @@
 | TensoRF (paper)                | train (30K steps)    | 36.46        |  -   | -    |
 | Instant-ngp (JNeRF)            | -                    | 36.41(5min)  |  -   | -    |
 
-### 十二. 问答
+### 十四. 问答
 1. [记录网友的一些问题](q-a.md)

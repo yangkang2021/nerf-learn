@@ -12,6 +12,3 @@
 4. Real-time Neural Radiance Talking Portrait Synthesis via Audio-spatial Decomposition训练出现抖动？
 5. niceslam好牛，不知道有没有佬跑通？apartment那个数据集有点问题，其他没问题？
 6. neural voice puppetry
-7. DVGO
-    - https://github.com/sunset1995/DirectVoxGO
-    - https://blog.csdn.net/weixin_50973728/article/details/126922818
