@@ -26,20 +26,21 @@
 ```
 # 1.删除创建激活虚拟环境
 conda remove -n neuman_env --all
-conda create -n neuman_env
+conda create -n neuman_env python=3.9.13
 conda activate neuman_env
 
 # 2. 安装pytorch和cudatoolkit
-conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.3 -c pytorch
+pip install torch==1.12.1+cu116 torchvision==0.13.1+cu116 torchaudio==0.12.1 --extra-index-url https://download.pytorch.org/whl/cu116
+#conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.6 -c pytorch -c conda-forge
 # 测试代码 python: import torch ; print(torch.__version__,torch.cuda.is_available())
 
 # 3. 安装pytorch3d其他依赖
 conda install -c fvcore -c iopath -c conda-forge fvcore iopath
 
 # 4. 源码编译pytorch3d
-# 4.1 下载https://github.com/NVIDIA/cub/archive/refs/tags/1.11.0.zip
-set CUB_HOME=D:\yangkang\cub-1.11.0
-# 4.2 开启vc编译环境
+# 4.1 下载https://github.com/NVIDIA/cub/archive/refs/tags/1.15.0.zip
+set CUB_HOME=C:\Users\MoMing\Desktop\nerf\cub-1.15.0
+# 4.2 开启vc编译环境，用Anaconda Prompt (Anaconda3)运行下面的命令,记住不是powershell
 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Auxiliary\Build\vcvars64.bat"
 # 4.3设置环境变量
 set FORCE_CUDA=1
@@ -51,7 +52,8 @@ set INCLUDE=C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um;C:\Pr
 set LIB=C:\Program Files (x86)\Windows Kits\10\Lib\10.0.22000.0\um\x64;C:\Program Files (x86)\Windows Kits\10\Lib\10.0.22000.0\uCRT\x64;%LIB%
 set PATH=C:\Program Files (x86)\Windows Kits\10\bin\10.0.22000.0\x64;%PATH%
 
-# 4.5编译
+# 4.5编译,在v0.7.1分支
+git checkout -b v0.7.1 v0.7.1
 python setup.py install
 # 4.6测试代码 python: import pytorch3d; print(pytorch3d.__version__)
 #--------------pytorch3d安装完毕------------------

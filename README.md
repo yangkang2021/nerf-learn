@@ -79,7 +79,10 @@
 1. DVGO
     - https://github.com/sunset1995/DirectVoxGO
     - https://blog.csdn.net/weixin_50973728/article/details/126922818
-    
+1. NoPe-NeRF：Optimising Neural Radiance Field with No Pose Prior.
+    - 主要内容：本文提出了一个无需相机位姿的NeRF重建系统，先对输入图像估计深度，然后借助相邻帧之间估计的深度图构造loss，实现对相机位姿和NeRF模型的同步优化，成为了同步优化位姿和NeRF方向的新SOTA。
+    - 项目地址：https://nope-nerf.active.vision/
+
 ### 七. 各种应用场景
 1. NGP
     - hash编码的nerf，几秒钟就完成训练。
@@ -94,6 +97,7 @@
     - 在几分钟内学习动态人体的神经体积表示
     - https://zju3dv.github.io/instant_nvr/
     - 个人总结：对NeuMan的速度提升
+    - 很快会开源代码
     ![](.images/05bddb37.png)
 1. Structured Local Radiance Fields for Human Avatar Modeling
     - 基于NeRF自动构建可驱动的实时全身数字人
@@ -101,6 +105,9 @@
     - 个人总结：解决NeuMan的问题和效果提升
     - 视频讲解：https://apposcmf8kb5033.pc.xiaoe-tech.com/detail/l_63e4f0bae4b06159f7389b4a/4
     ![](.images/0dff7585.png)
+1. vid2avatar
+    - https://github.com/MoyGcc/vid2avatar
+    - 很快会开源代码
 1. HeadNeRF
     - 一个实时的基于nerf的参数化的人类头部模型
     - A Real-time NeRF-based Parametric Head Model
@@ -201,6 +208,7 @@
     - https://arxiv.org/pdf/2211.13226.pdf
     - https://mp.weixin.qq.com/s/6KVUMSk-gLpBtNd9kqjeZw
     ![](.images/1403b104.png) 
+1. [查看更过0](https://www.bilibili.com/video/BV1n24y147o5)
 1. [查看更多1](https://github.com/yenchenlin/awesome-NeRF)
 1. [查看更多2](https://www.bilibili.com/video/BV1GM41167Vo)
 1. [查看更多3](https://www.bilibili.com/video/BV1fL4y1T7Ag)
