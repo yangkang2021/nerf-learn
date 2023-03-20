@@ -93,6 +93,20 @@
     - 总结：根据已知人体动作使得重建人物运动，不再是简单的360转动场景，人物跳舞了。
     - https://github.com/apple/ml-neuman
     ![](.images/778ccd02.png)
+1. UV Volumes for Real-time Rendering of Editable Free-view Human Performance 
+    - 以30FPS实时渲染，可自由编辑人体视图
+    - 神经体积渲染能够在自由视图中对人类表演者进行照片逼真的渲染，这是沉浸式VR/AR应用中的一项关键任务。但是，由于渲染过程中的高计算成本，这种实践受到了严重限制。为了解决这个问题，我们提出了UV体积，这是一种新的方法，可以实时渲染人类表演者的可编辑自由视图视频。它将高频（即非平滑）的人类外观从3D体积中分离出来，并将其编码为2D神经纹理堆栈（NTS）。平滑的UV体积允许更小、更浅的神经网络在3D中获得密度和纹理坐标，同时在2D NTS中捕捉详细的外观。对于可编辑性，参数化人体模型和平滑纹理坐标之间的映射使我们能够更好地概括新颖的姿势和形状。此外，NTS的使用可以实现有趣的应用，例如重新纹理。在CMU Panoptic、ZJU Mocap和H36M数据集上进行的大量实验表明，我们的模型可以以30FPS的平均速度渲染960 x 540幅图像，其照片逼真度与最先进的方法相当。
+    - 项目主页：https://fanegg.github.io/UV-Volumes/
+    - 论文地址：https://arxiv.org/pdf/2203.14402.pdf
+   ![](.images/2891eee1.png)
+1. ELICIT
+    - 单张图片生成数字人
+    - 总结：连视频或者图像集合都不需要，直接从单张图像重建。
+    - 项目：https://elicit3d.github.io/
+    - 代码：https://github.com/huangyangyi/ELICIT
+    - https://mp.weixin.qq.com/s/76-klqy_kiExjAyh2CVQvA
+    ![](.images/cb4b8b0f.png)
+---
 1. Learning Neural Volumetric Representations of Dynamic Humans in Minutes
     - 在几分钟内学习动态人体的神经体积表示
     - https://zju3dv.github.io/instant_nvr/
@@ -102,27 +116,17 @@
 1. Structured Local Radiance Fields for Human Avatar Modeling
     - 基于NeRF自动构建可驱动的实时全身数字人
     - https://arxiv.org/pdf/2203.14478.pdf
+    - 没有开源
     - 个人总结：解决NeuMan的问题和效果提升
     - 视频讲解：https://apposcmf8kb5033.pc.xiaoe-tech.com/detail/l_63e4f0bae4b06159f7389b4a/4
     ![](.images/0dff7585.png)
-1. UV Volumes for Real-time Rendering of Editable Free-view Human Performance 
-    - 以30FPS实时渲染，可自由编辑人体视图！CVPR2023 #虚拟现实#西安交通大学#腾讯@微信时刻 
-    - 神经体积渲染能够在自由视图中对人类表演者进行照片逼真的渲染，这是沉浸式VR/AR应用中的一项关键任务。但是，由于渲染过程中的高计算成本，这种实践受到了严重限制。为了解决这个问题，我们提出了UV体积，这是一种新的方法，可以实时渲染人类表演者的可编辑自由视图视频。它将高频（即非平滑）的人类外观从3D体积中分离出来，并将其编码为2D神经纹理堆栈（NTS）。平滑的UV体积允许更小、更浅的神经网络在3D中获得密度和纹理坐标，同时在2D NTS中捕捉详细的外观。对于可编辑性，参数化人体模型和平滑纹理坐标之间的映射使我们能够更好地概括新颖的姿势和形状。此外，NTS的使用可以实现有趣的应用，例如重新纹理。在CMU Panoptic、ZJU Mocap和H36M数据集上进行的大量实验表明，我们的模型可以以30FPS的平均速度渲染960 x 540幅图像，其照片逼真度与最先进的方法相当。
-    - 项目主页：https://fanegg.github.io/UV-Volumes/
-    - 论文地址：https://arxiv.org/pdf/2203.14402.pdf
-   ![](.images/2891eee1.png)
 1. InstantAvatar
     - 从 60 秒单目视频中学习数字人化身
     - 项目主页：https://tijiang13.github.io/InstantAvatar/
     - 论文：https://arxiv.org/pdf/2212.10550.pdf
     - 介绍：https://mp.weixin.qq.com/s/4Ad72-s--jL0AWkkGE7gAw
+    - 没有开源
     - ![](.images/e2c36b0b.png)
-1. ELICIT
-    - 单张图片生成数字人
-    - 总结：连视频或者图像集合都不需要，直接从单张图像重建。
-    - https://elicit3d.github.io/
-    - https://mp.weixin.qq.com/s/76-klqy_kiExjAyh2CVQvA
-    ![](.images/cb4b8b0f.png)
 1. vid2avatar
     - 一键从视频直接提取角色重建3D动态模型
     - https://moygcc.github.io/vid2avatar/
@@ -193,7 +197,6 @@
     - 专注人体三维重建
     - https://grail.cs.washington.edu/projects/humannerf/
     - https://github.com/chungyiweng/humannerf
-    
     ![](.images/1b77fdf5.png)
 1. DiffRF: 
     - 跟扩散模型的结合
@@ -217,7 +220,7 @@
     - https://arxiv.org/pdf/2211.13226.pdf
     - https://mp.weixin.qq.com/s/6KVUMSk-gLpBtNd9kqjeZw
     ![](.images/1403b104.png) 
-1. [查看更过0](https://www.bilibili.com/video/BV1n24y147o5)
+1. [查看更多0](https://www.bilibili.com/video/BV1n24y147o5)
 1. [查看更多1](https://github.com/yenchenlin/awesome-NeRF)
 1. [查看更多2](https://www.bilibili.com/video/BV1GM41167Vo)
 1. [查看更多3](https://www.bilibili.com/video/BV1fL4y1T7Ag)
