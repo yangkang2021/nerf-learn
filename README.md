@@ -251,6 +251,9 @@
     - ![](.images/6f130daa.png)
     
 ### 十二. 关于虚拟数字人，数字克隆人
+1. Rodin: A Generative Model for Sculpting 3D Digital Avatars Using Diffusion
+   - 用扩散模型生成 3d数字人
+   - https://3d-avatar-diffusion.microsoft.com/
 1. [SMPL人体模型](digital-human/1-SMPL人体模型.md)
 0. 郑泽荣的论文集合：https://zhengzerong.github.io/
 0. NeuMan：https://github.com/apple/ml-neuman
