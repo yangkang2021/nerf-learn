@@ -106,6 +106,9 @@
     - 代码：https://github.com/huangyangyi/ELICIT
     - https://mp.weixin.qq.com/s/76-klqy_kiExjAyh2CVQvA
     ![](.images/cb4b8b0f.png)
+1. Neural Human Performer: Learning Generalizable Radiance Fields for Human Performance Rendering
+   - https://github.com/YoungJoongUNC/Neural_Human_Performer
+   - https://youngjoongunc.github.io/nhp/
 ---
 1. Learning Neural Volumetric Representations of Dynamic Humans in Minutes
     - 在几分钟内学习动态人体的神经体积表示
