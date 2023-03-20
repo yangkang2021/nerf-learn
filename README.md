@@ -105,17 +105,12 @@
     - 个人总结：解决NeuMan的问题和效果提升
     - 视频讲解：https://apposcmf8kb5033.pc.xiaoe-tech.com/detail/l_63e4f0bae4b06159f7389b4a/4
     ![](.images/0dff7585.png)
-1. vid2avatar
-    - https://github.com/MoyGcc/vid2avatar
-    - 很快会开源代码
-1. HeadNeRF
-    - 一个实时的基于nerf的参数化的人类头部模型
-    - A Real-time NeRF-based Parametric Head Model
-    - 论文地址：https://arxiv.org/pdf/2112.05637.pdf
-    - 项目主页: https://crishy1995.github.io/HeadNeRF-Project/
-    - 代码链接: https://github.com/CrisHY1995/headnerf
-    - 介绍：https://m.thepaper.cn/baijiahao_18092004
-    ![](.images/044a68b3.png)
+1. UV Volumes for Real-time Rendering of Editable Free-view Human Performance 
+    - 以30FPS实时渲染，可自由编辑人体视图！CVPR2023 #虚拟现实#西安交通大学#腾讯@微信时刻 
+    - 神经体积渲染能够在自由视图中对人类表演者进行照片逼真的渲染，这是沉浸式VR/AR应用中的一项关键任务。但是，由于渲染过程中的高计算成本，这种实践受到了严重限制。为了解决这个问题，我们提出了UV体积，这是一种新的方法，可以实时渲染人类表演者的可编辑自由视图视频。它将高频（即非平滑）的人类外观从3D体积中分离出来，并将其编码为2D神经纹理堆栈（NTS）。平滑的UV体积允许更小、更浅的神经网络在3D中获得密度和纹理坐标，同时在2D NTS中捕捉详细的外观。对于可编辑性，参数化人体模型和平滑纹理坐标之间的映射使我们能够更好地概括新颖的姿势和形状。此外，NTS的使用可以实现有趣的应用，例如重新纹理。在CMU Panoptic、ZJU Mocap和H36M数据集上进行的大量实验表明，我们的模型可以以30FPS的平均速度渲染960 x 540幅图像，其照片逼真度与最先进的方法相当。
+    - 项目主页：https://fanegg.github.io/UV-Volumes/
+    - 论文地址：https://arxiv.org/pdf/2203.14402.pdf
+   ![](.images/2891eee1.png)
 1. InstantAvatar
     - 从 60 秒单目视频中学习数字人化身
     - 项目主页：https://tijiang13.github.io/InstantAvatar/
@@ -128,6 +123,20 @@
     - https://elicit3d.github.io/
     - https://mp.weixin.qq.com/s/76-klqy_kiExjAyh2CVQvA
     ![](.images/cb4b8b0f.png)
+1. vid2avatar
+    - 一键从视频直接提取角色重建3D动态模型
+    - https://moygcc.github.io/vid2avatar/
+    - 很快会开源代码
+    - https://www.bilibili.com/video/BV1MM41147v5/
+   ![](.images/016a7c3f.png)
+1. HeadNeRF
+    - 一个实时的基于nerf的参数化的人类头部模型
+    - A Real-time NeRF-based Parametric Head Model
+    - 论文地址：https://arxiv.org/pdf/2112.05637.pdf
+    - 项目主页: https://crishy1995.github.io/HeadNeRF-Project/
+    - 代码链接: https://github.com/CrisHY1995/headnerf
+    - 介绍：https://m.thepaper.cn/baijiahao_18092004
+    ![](.images/044a68b3.png)
 1. 4D-Facial-Avatars
     - 头部位姿和面部表情重建
     - 总结：直接可以重建动态表情，不是静态模型。
