@@ -5,7 +5,7 @@
 
 ### 一. nerf的数学基础
 00. [Nerf的右手三维坐标系与OpenGL相同](nerf/Nerf的右手三维坐标系与OpenGL相同.md)
-00. [二维和三维的几何变换](nerf/二维和三维的几何变换.md)
+00. [二维和三维的几何变换](nerf/二维和三维的几何变换.md)--还没开始
 00. [小孔成像与相机模型](nerf/小孔成像与相机模型.md)
 00. [小孔成像的逆过程](nerf/小孔成像的逆过程.md)--没有完成，而且有错误
 
@@ -93,6 +93,12 @@
     - 总结：根据已知人体动作使得重建人物运动，不再是简单的360转动场景，人物跳舞了。
     - https://github.com/apple/ml-neuman
     ![](.images/778ccd02.png)
+1. SadTalker：头、唇运动超自然，中英双语全能，还会唱歌
+   - 代码：https://github.com/Winfredy/SadTalker
+   - 论文链接：https://arxiv.org/pdf/2211.12194.pdf
+   - 项目主页：https://sadtalker.github.io/
+   - 介绍:https://mp.weixin.qq.com/s/s2AxhDuqG4IoaAG1mjRLCg
+   ![](.images/68d22a39.png)
 1. UV Volumes for Real-time Rendering of Editable Free-view Human Performance 
     - 以30FPS实时渲染，可自由编辑人体视图
     - 神经体积渲染能够在自由视图中对人类表演者进行照片逼真的渲染，这是沉浸式VR/AR应用中的一项关键任务。但是，由于渲染过程中的高计算成本，这种实践受到了严重限制。为了解决这个问题，我们提出了UV体积，这是一种新的方法，可以实时渲染人类表演者的可编辑自由视图视频。它将高频（即非平滑）的人类外观从3D体积中分离出来，并将其编码为2D神经纹理堆栈（NTS）。平滑的UV体积允许更小、更浅的神经网络在3D中获得密度和纹理坐标，同时在2D NTS中捕捉详细的外观。对于可编辑性，参数化人体模型和平滑纹理坐标之间的映射使我们能够更好地概括新颖的姿势和形状。此外，NTS的使用可以实现有趣的应用，例如重新纹理。在CMU Panoptic、ZJU Mocap和H36M数据集上进行的大量实验表明，我们的模型可以以30FPS的平均速度渲染960 x 540幅图像，其照片逼真度与最先进的方法相当。
